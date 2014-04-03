@@ -55,10 +55,14 @@ body{
 
 #side_news{
 	float: left;
-	width: 220px;
+	width: 205px;
 	margin: 20px 0px;
 	padding: 30px;
-	background: #66CCCC;
+	background: #d3d3d3;
+}
+
+#side_news li a{
+	color: black;
 }
 
 #the_footer{
@@ -71,7 +75,7 @@ body{
 
 article{
 	background: #FFFBCC;
-	border: 1px solid red;
+	border: 1px solid #d3d3d3;
 	padding: 20px;
 	margin-bottom: 15px;
 
@@ -168,7 +172,7 @@ article:hover .readMore{
 }
 
 li.now{
-	background: #d3d3d3;
+	background: #9999FF;
 }
 
 #submenuTutorials{
@@ -189,3 +193,4 @@ li.now{
 #login{
 	float:right;
 }
+
