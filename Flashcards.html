@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+<script type="text/javascript" src="./jquery-1.11.0.js">
+</script>
+
+<script type="text/javascript">
+	function siguienteFlashcard(){
+				$("#buttonback").attr("disabled","disabled");
+		$("#buttonnext").attr("disabled","disabled");
+		if (currentFlashcard==null) {
+			currentFlashcard=$("#firstFlashcard");
+		};
+		currentFlashcard.fadeOut(1000,function(){
+
+			currentFlashcard=currentFlashcard.next();
+		currentFlashcard.fadeIn(1000,function(){
+				$("#buttonback").removeAttr("disabled");
+			
+
+			if(currentFlashcard.attr("id")!="lastFlashcard"){
+
+				$("#buttonnext").removeAttr("disabled");
+				
+			}
+			
+			else{
+
+				$("#buttonnext").attr("disabled","disabled");
+			}
+
+		});
+		
+
+		});
+		
+	}
+
+	var currentFlashcard=null;
+
+
+
+	function anteriorFlashcard(){
+		$("#buttonnext").attr("disabled","disabled");
+		$("#buttonback").attr("disabled","disabled");
+
+		currentFlashcard.fadeOut(1000,function(){
+
+			currentFlashcard=currentFlashcard.prev();
+		currentFlashcard.fadeIn(1000, function(){
+				$("#buttonnext").removeAttr("disabled");
+
+
+if(currentFlashcard.attr("id")!="firstFlashcard"){
+
+			
+
+
+
+
+
+
+
+			$("#buttonback").removeAttr("disabled");
+			
+
+		}
+		else{
+
+			$("#buttonback").attr("disabled","disabled");
+		}
+
+
+		});
+		
+		});
+		
+
+
+	}
+</script>
+
+
+
+
+</head>
+
+<body>
+	<div id="big_wrapper">
+		<header id="top_header">
+			<h1>Flashcards</h1>
+		</header>
+
+		<nav id="top_menu">
+			
+			<ul>
+				<li> <a href="Rennie.html" title="Go to home" >Home</a></li>
+				<li id="menuTutorials">
+					<a href="tutorials.html" title="Go to tutorials" >Tutorials</a>
+					<ul id="submenuTutorials">
+						<li><a href="Vocabulary.html">Vocabulary</a></li>
+						<li><a href="Grammar.html">Grammar</a></li>
+						<li><a href="Pronunciation.html">Pronunciation</a></li>
+						<li><a href="Expressions.html">Expressions</a></li>
+						<li class="now"><a href="Flashcards.html">Flashcards</a></li>
+					</ul>
+				</li>
+				<li><a href="podcast.html" title="Go to podcast">Podcast</a></li>
+			</ul>
+	
+		</nav>
+
+		<section id="FlashcardsAll">
+			<h1>Flashcards-all topics</h1>
+
+			<div id="firstFlashcard"><p>Happy</p></div>
+
+			<div style="display: none"> <p>Feliz</p></div>
+
+			<div style="display: none"><p>Sad</p></div>
+
+			<div style="display: none"> <p>Triste</p></div>
+						
+			<div style="display: none"><p>Busy</p></div>	
+
+			<div style="display: none"> <p>Ocupado</p></div>	
+
+			<div style="display: none"><p>Free</p></div>	
+
+			<div style="display: none"> <p>Libre</p></div>	
+
+			<div style="display: none"><p>Near</p></div>	
+
+			<div style="display: none"> <p>Cerca</p></div>	
+
+			<div style="display: none"><p>Far</p></div>	
+
+			<div id="lastFlashcard" style="display: none"><p>Lejos</p></div>	
+
+			
+			
+	
+		
+
+		</section>
+		
+		<div id="buttons"><input id="buttonback" type="button" onclick="anteriorFlashcard()" disabled="disabled"></input>
+			<input id="buttonnext" type="button" name="siguiente" onclick="siguienteFlashcard()"></input>
+		</div>
+		
+	
+
+
+
+	<footer id="the_footer">
+		Copyright Rennie 2014
+	</footer>
+
+
+</div>
+</body>
+
+
+
+</html>
+	

@@ -1,0 +1,135 @@
+<!doctype html>
+
+<html lang="en">
+
+
+
+<head>
+<script type="text/javascript">
+	function showOrHideNumbers(){
+		var submenuNumbers=document.getElementById("submenuNumbers");
+		if(submenuNumbers.style.display=="none"){
+			submenuNumbers.style.display="block";
+
+		}
+
+		else{
+			submenuNumbers.style.display="none";
+		}
+
+		 
+	}
+
+function showOrHideAnimals(){
+	var subMenu=document.getElementById("subMenuAnimals");
+	if (subMenu.style.display=="none") {
+		
+		subMenu.style.display="block";
+
+	}
+	else{
+		subMenu.style.display="none";
+	}
+}
+
+function showOrHideFood(){
+	var subMenuFood=document.getElementById("subMenuFood");
+	if (subMenuFood.style.display=="none") {
+			subMenuFood.style.display="block";
+
+	}
+
+	else{
+		subMenuFood.style.display="none";
+	}
+
+
+}
+
+</script>
+
+<meta charset="utf-8" />
+<title>Vocabulary-Language Now</title>
+<link rel="stylesheet" href="css/style.css" />	
+
+</head>
+
+
+<body>
+	<div id="big_wrapper">
+		<header id="top_header">
+			<h1>Tutorials</h1>
+		</header>
+
+		<nav id="top_menu">
+			<ul>
+				<li> <a href="Rennie.html" title="Go to home">Home</a></li>
+				<li class="now"><a href="tutorials.html" title="Go to tutorials">Tutorials</a></li>
+				<li><a href="podcast.html" title="Go to podcast">Podcast</a></li>
+			</ul>
+		</nav>
+
+		<section id="main_section">
+			<article>
+				<h3>Numbers</h3>
+				<p>Learn numbers</p>
+				<a href="#" title="Read more" class="readMore">Read more ...</a>
+			</article>
+
+			<article>
+				<h3>Colors</h3>
+				<p>Learn colors</p>						
+			</article>
+
+		</section>
+		
+	<aside id="side_news">
+		<h4>Vocabulary Topics</h4>
+		<ul>
+			<li><a onclick="showOrHideNumbers()" href="#">Numbers</a>
+				<ul style="display:none" id="submenuNumbers">
+					<li>ones</li>
+					<li>tens</li>
+					<li>twenties</li>
+					<li>thirties</li>
+				</ul>
+			</li>
+			
+			<li><a onclick="showOrHideAnimals()" href="#">Animals</a>
+				<ul style="display:none" id="subMenuAnimals">
+					<li>Sea Animals</li>
+					<li>Birds</li>
+					<li>Mammals</li>
+					<li>Reptiles</li>
+				</ul>
+			</li>
+
+			<li><a onclick="showOrHideFood()" href="#">Food</a>
+				<ul style="display:none" id="subMenuFood">
+					<li>Hamburger</li>
+					<li>Hotdog</li>
+				</ul>
+
+
+			</li>
+			
+			<li>Miscellaneous</li>
+		</ul>
+	</aside>
+
+
+
+	<footer id="the_footer">
+		Copyright Rennie 2014
+	</footer>
+
+
+</div>
+</body>
+
+
+
+
+
+
+</html>
