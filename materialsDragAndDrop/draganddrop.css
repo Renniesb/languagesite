@@ -1,0 +1,30 @@
+h2{
+padding:0px;
+margin: 0px;
+
+}
+
+#raw-materials, #manufactured-goods{
+margin-right: 200px;
+width: 100px;
+height: 400px;
+float: left;
+}
+
+
+.raw-material-space, .manufactured-good-space {
+	border: 1px solid red;
+	width:140px;
+	height: 115px;
+}
+
+#bp, #mt, #bici, #mf, #mc, #mb , #gold, #oil, #steel, #wheat, #wood, #bean{
+
+height:115px;
+width:140px;
+
+}
+#photos{
+
+margin-left: 600px;
+}
